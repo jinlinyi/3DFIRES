@@ -1,6 +1,6 @@
 # 3DFIRES
 
-This is the repository that contains source code for the [3DFIRES](https://github.com/jinlinyi/3DFIRES).
+This is the repository that contains source code for the [3DFIRES webpage](https://jinlinyi.github.io/3DFIRES/).
 
 If you find 3DFIRES useful for your work please cite:
 ```
