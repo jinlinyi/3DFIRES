@@ -1,0 +1,162 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.attribution h1 {
+  margin: 0 0 0.25em;
+}
+
+.attribution img {
+  opacity: 0.5;
+  height: 2em;
+}
+
+.attribution .cc {
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+
+/* .row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5vh;
+}
+*/
+.column-demo-fig {
+  flex: 1; /* This ensures each column takes equal space */
+  text-align: center;
+  padding: 0 5px; /* Adjust the left and right padding to reduce the gap */
+} 
+
+.row {
+  display: flex;
+  align-items: center; /* This ensures vertical alignment in the center */
+}
+
+.input-img {
+  display: block; /* Ensures there is no extra space under the image */
+  max-width: 100%; /* Ensures the image is not wider than its container */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+/* For the text, you might want to create a specific class or target it differently */
+/* .column > div {
+  text-align: center;
+} */
+
+.column-demo {
+  text-align: center; /* Centers the text */
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+} */
+
+.block {
+  display: block;
+  width: 25%;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 28px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header {
+  font-size: 2vw;
+  text-align: center;
+}
+
+.header-input {
+  /* width: 280px; */
+  width: 100%;
+}
+
+.header-result {
+  /* width: 280px; */
+  width: 100%;
+}
+
+/* .input-img {
+  width: 100%;
+} */
+
+
+span.blueText {
+  color: #6196C9;
+  font-weight: bold;
+}
+
+span.redText {
+  color: #e6729a;
+  font-weight: bold;
+}
+
+/* for interactive results */
+#card {
+  display: flex;
+  flex-direction: column;  
+  overflow: hidden;
+  border: 2px rgb(0, 0, 0) solid;
+  width: 100%;
+  height: 100%;
+}
+
+model-viewer {
+  width: 100%;
+  height: calc(15vw);;
+  overflow: hidden;
+  background-color: #8b8b8b;
+}
+.view0 {
+  border:4px solid #0071bc;
+}
+
+
+.view1 {
+  border:4px solid #d85218;
+}
+
+.view2 {
+  border:4px solid #ecb01f;
+}
+
+
+.view3 {
+  border:4px solid #7d2e8d;
+}
+
+.view4 {
+  border:4px solid #76ab2f;
+}
