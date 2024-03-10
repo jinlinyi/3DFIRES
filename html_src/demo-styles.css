@@ -25,23 +25,7 @@
   text-decoration: none;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
-  font-style: italic;
-  line-height: 1.5em;
-}
 
-
-/* .row {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0.5vh;
-}
-*/
 .column-demo-fig {
   flex: 1; /* This ensures each column takes equal space */
   text-align: center;
@@ -59,22 +43,11 @@ footer {
   height: auto; /* Maintains the aspect ratio */
 }
 
-/* For the text, you might want to create a specific class or target it differently */
-/* .column > div {
-  text-align: center;
-} */
-
 .column-demo {
   text-align: center; /* Centers the text */
   font-weight: 500;
   margin: 0;
 }
-
-/* Clear floats after the columns */
-/* .row:after {
-  content: "";
-  display: table;
-} */
 
 .block {
   display: block;
