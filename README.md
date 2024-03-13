@@ -40,7 +40,7 @@ wget -O dataset.tar "https://www.dropbox.com/scl/fi/hv4zn8s09vjsy0en0au0v/datase
 tar -xvf dataset.tar
 ```
 
-To get the full dataset for evaluation and training, you need to download the omnidata taskonomy medium dataset as tar files (no need to decompress since our code directly read from tar). We also need to create tarindex for faster IO.
+To get the full dataset for evaluation and training, you need to download the [omnidata](https://github.com/EPFL-VILAB/omnidata/tree/main/omnidata_tools/dataset#downloading) Taskonomy Medium dataset as tar files (no need to decompress since our code directly read from tar). We also need to create tarindex for faster IO.
 ```bash
 conda install -c conda-forge aria2
 pip install 'omnidata-tools'
@@ -49,7 +49,7 @@ omnitools.download rgb depth_zbuffer \
    --components taskonomy \
    --subset medium \
    --dest ./dataset/omnidata \
-   --name jinlinyi --email jinlinyi@umich.edu --agree_all \
+   --name YOUR_NAME --email YOUR_EMAIL --agree_all \
    --only_download True \
    --keep_compressed True 
 ```
@@ -58,7 +58,7 @@ Create [tarindexer](https://github.com/devsnd/tarindexer) for fast tar IO.
 ```bash
 git clone git@github.com:devsnd/tarindexer.git
 cd tarindexer
-ROOT=./dataset/omnidata
+ROOT=../dataset/omnidata
 tar=$ROOT/compressed
 tarindex=$ROOT/tarindex
 mkdir -p $tar
