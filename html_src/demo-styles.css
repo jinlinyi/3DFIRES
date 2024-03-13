@@ -47,7 +47,6 @@
   text-align: center; /* Centers the text */
   font-weight: 500;
   margin: 0;
-  font-size: 25px;
 }
 
 .block {
@@ -133,7 +132,4 @@ model-viewer {
 
 .view4 {
   border:4px solid #76ab2f;
-}
-.all {
-  border:4px solid #ffffff00;
 }
