@@ -1,0 +1,45 @@
+name: 3dfires
+channels:
+  - pytorch
+  - conda-forge
+  - fvcore
+  - iopath
+  - bottler
+  - defaults
+dependencies:
+  - pytorch=1.12.1
+  - torchvision=0.13.1
+  - cudatoolkit=11.3
+  - shapely
+  - rtree
+  - graph-tool
+  - pyembree
+  - fvcore
+  - iopath
+  - nvidiacub
+  - plyfile
+  - pip:
+    - "git+https://github.com/facebookresearch/pytorch3d.git"
+    - "trimesh[all]"
+    - tensorboardX
+    - opencv-contrib-python
+    - tensorboard
+    - imageio
+    - scipy
+    - scikit-learn
+    - numba
+    - loguru
+    - tensorboard
+    - ray
+    - scikit-image
+    - pre-commit
+    - pandas
+    - transforms3d
+    - h5py
+    - matplotlib
+    - html4vision
+    - gitpython
+    - albumentations
+    - open3d
+    - einops
+    - timm==0.6.7

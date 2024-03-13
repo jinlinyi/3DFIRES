@@ -1,0 +1,59 @@
+DATALOADER:
+  ADAPTIVE_SAMPLING: true
+  CAMERA_MODE: perspective
+  GAUSSIAN_STD: 0.4
+  NUM_GAUSSIAN_PT: 256
+  NUM_RAY_PER_IMG_SAMPLE: 80
+  NUM_UNIFORM_PT: 256
+  NUM_WORKERS: 4
+  RESIZE: 384
+  SAMPLE_GAUSSIAN_ON: true
+  TEST_VIEW:
+  - 3
+  TRAIN_VIEW:
+  - 1
+  - 2
+  - 3
+  CACHE_PATH: ./dataset/omnidata/ 
+  TAR_ROOT: ./dataset/omnidata/compressed 
+  INDEX_ROOT: ./dataset/omnidata/tarindex 
+  # CACHE_PATH: /home/jinlinyi/workspace/sparse-drdf/spNet/data/dataset_dicts/v11_taskonomy_graph_room_fixfov/
+  # TAR_ROOT: '/nfs/turbo/fouheyTemp/jinlinyi/datasets/omnidata/compressed'
+  # INDEX_ROOT: '/nfs/turbo/fouheyTemp/relh/latent-diffusion/data/omni/omniindex/'
+DATASETS:
+  TEST:
+  - test_set3
+  TRAIN:
+  - train_set3
+DATASET_GENERATE:
+  FIX_FOV_DEG: 63.414969
+  MAX_HIT: 8
+  RAY_SAMPLE_RESOLUTION: 0.03
+  ZFAR: 8.0
+  ZNEAR: 0.1
+MODEL:
+  BACKBONE:
+    NAME: dpt_beit_large_384
+  DECAY_LOSS_ON: false
+  DEPTH_ONLY: false
+  DRDF_MLP:
+    CAM_ATTENTION_ON: true
+    MLP_BATCH_NORM: false
+    MLP_FEATURE_DIM: 256
+    POSITIONAL_ENCODING_FREQ: 6
+    RAY_ATTENTION_ON: false
+  DRDF_TAU: 1.0
+  FREEZE: []
+VIS_PERIOD: 100
+EVAL_PERIOD: 1000
+SAVE_PERIOD: 1000
+TRAIN:
+  EPOCHS: 100
+  SOLVER:
+    TYPE: 'SGD'
+    MOMENTUM: 0.9
+    BASE_LR: 0.001
+    LR_SCHEDULER_NAME: StepLR
+    GAMMA: 0.1
+    STEPS: 26
+    WEIGHT_DECAY: 0.0001
