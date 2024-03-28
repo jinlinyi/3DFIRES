@@ -1,7 +1,7 @@
 # 3DFIRES: Few Image 3D REconstruction for Scenes with Hidden Surfaces
 
 <a href="https://jinlinyi.github.io/3DFIRES/"><img src="https://img.shields.io/static/v1?label=Project&message=Website&color=red" height=20.5></a> 
-<a href=""><img src="https://img.shields.io/badge/arXiv-2403.03221-b31b1b.svg" height=20.5></a>
+<a href="https://arxiv.org/abs/2403.08768"><img src="https://img.shields.io/badge/arXiv-2403.03221-b31b1b.svg" height=20.5></a>
 
 [Linyi Jin<sup>1</sup>](https://jinlinyi.github.io/), 
 [Nilesh Kulkarni<sup>1</sup>](https://nileshkulkarni.github.io/), 
